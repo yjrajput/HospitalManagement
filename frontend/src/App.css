@@ -46,6 +46,9 @@ body{
     .header{
       @apply  bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
     }
+    .hero_Section{
+      @apply  bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
+    }
 }
 
 @media only screen and (max-width: 1024px){
