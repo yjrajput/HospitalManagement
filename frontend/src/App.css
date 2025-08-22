@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courier+Prime:wght@700&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-primaryColor: #0067ff;   
+  --color-yellowColor: #feb60d; 
+  --color-purpulColor: #9771ff;
+  --color-iresBlurColor: #01b5c5;
+  --color-headingColor: #181a1e;
+  --color-textColor: #4e545f;
+  --shadow-panealShaow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+
+@layer base{
+    section{
+        @apply py-[75px];
+    }
+}
+
+@layer components{
+    .container{
+      @apply max-w-full w-[1440px] px-5 mx-auto;
+    }
+    .btn{
+      @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px] cursor-pointer;
+    }
+    .heading{
+      @apply text-[44px] leading-[55px] font-[700] text-headingColor;
+    }
+    .text-para{
+      @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+    }
+    .header{
+      @apply  bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+    }
+}
+
+@media only screen and (max-width: 1024px){
+  .container{
+    @apply w-full;
+  }
+  section{
+    @apply py-[35px];
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .heading{
+    @apply text-[26px] leading-[36px];
+  }
+  .text-para{
+    @apply text-[16px] leading-7 mt-3;
+  }
+}
