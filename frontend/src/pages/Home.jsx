@@ -12,6 +12,7 @@ import { BsArrowRight } from "react-icons/bs";
 import About from '../components/about/About'
 import ServiceList from '../components/services/ServiceList'
 import featureImg from '../assets/images/feature-img.png'
+import DoctorsList from '../components/doctors/DoctorsList'
 const Home = () => {
   return (
     
@@ -197,6 +198,21 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+        {/* =======greate doctores=========== */}
+        <section>
+            <div className='container'>
+                <div className='xl:w-[470px] mx-auto'>
+                    <h1 className='heading text-center'>Our great doctors</h1>
+                    <p className='text-para text-center'>
+                        Wolrd class care for everyone. Our health system offerse unmmatched, expert health care.
+                    </p>
+                </div>
+
+                <DoctorsList/>
             </div>
         </section>
     </>
