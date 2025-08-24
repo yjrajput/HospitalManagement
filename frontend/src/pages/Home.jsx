@@ -7,12 +7,15 @@ import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
 import videoIcon from '../assets/images/video-icon.png'
 import avtarImg from '../assets/images/avatar-icon.png'
+import faqImg from '../assets/images/faq-img.png'
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from "react-icons/bs";
 import About from '../components/about/About'
 import ServiceList from '../components/services/ServiceList'
 import featureImg from '../assets/images/feature-img.png'
 import DoctorsList from '../components/doctors/DoctorsList'
+import Faqlist from '../components/faq/Faqlist'
+import Testimonial from '../components/testimonial/Testimonial'
 const Home = () => {
   return (
     
@@ -213,6 +216,38 @@ const Home = () => {
                 </div>
 
                 <DoctorsList/>
+            </div>
+        </section>
+
+        {/* ==============faq section============== */}
+        <section>
+            <div className='container'>
+                <div className='flex justify-between gap-[50px] lg:gap-0'>
+                    <div className='w-1/2 hidden md:block'>
+                        <img src={faqImg} alt="" />
+                    </div>
+
+                    <div className='w-full md:w-1/2'>
+                        <h2 className='heading'>Most questions by our beloved patients
+                        </h2>
+
+                        <Faqlist/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* ========testimonial========== */}
+        <section>
+            <div className='container'>
+                <div className='xl:w-[470px] mx-auto'>
+                    <h1 className='heading text-center'>What our Patient say</h1>
+                    <p className='text-para text-center'>
+                        Wolrd class care for everyone. Our health system offerse unmmatched, expert health care.
+                    </p>
+                </div>
+
+                <Testimonial/>
             </div>
         </section>
     </>
