@@ -39,7 +39,7 @@ const DoctorsCart = ({doctors}) => {
                 </p>
             </div>
 
-             <Link to="/doctores" className='w-[44px] h-[44px] rounded-full border border-solid border-[#181a1e] mt-30px mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
+             <Link to="/doctors/:id" className='w-[44px] h-[44px] rounded-full border border-solid border-[#181a1e] mt-30px mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
                 <BsArrowRight className='group-hover:text-white w-6 h-6'/>
              </Link>
         </div>

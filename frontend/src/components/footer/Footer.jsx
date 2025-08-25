@@ -46,7 +46,7 @@ const Footer = () => {
 
   const quickList02 = [
     {
-      path: '/find-a-doctor',
+      path: '/doctors',
       display: 'Find a Doctor',
     },
     {
