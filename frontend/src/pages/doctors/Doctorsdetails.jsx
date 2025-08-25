@@ -3,6 +3,7 @@ import doctorImage from '../../assets/images/doctor-img02.png'
 import starIcon from '../../assets/images/Star.png'
 import Doctorabout from './Doctorabout'
 import Doctorfeedback from './Doctorfeedback'
+import Sidepannel from './Sidepannel'
 
 const Doctorsdetails = () => {
 
@@ -55,6 +56,10 @@ const Doctorsdetails = () => {
                     }
                 </div>
 
+            </div>
+
+            <div>
+              <Sidepannel/>
             </div>
           </div>
         </div> 
