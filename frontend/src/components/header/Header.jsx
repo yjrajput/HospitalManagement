@@ -46,7 +46,7 @@ const navlinks = [
       { path: "/location/bangalore", display: "Bangalore" },
     ],
   },
-  { path: "/doctors", display: "Find a Doctor" },
+  { path: "/doctors", display: "Doctor's" },
   { path: "/contact", display: "Contact" },
 ];
 
